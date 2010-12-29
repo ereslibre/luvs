@@ -1,4 +1,19 @@
 Luvs::Application.routes.draw do
+  resources :users
+  resources :projects
+  resources :luvs
+
+  match "/users" => "users#index"
+  match "/users/:id" => "users#show"
+
+  match "/projects" => "projects#index"
+  match "/projects/:id" => "projects#show"
+
+  match "/luvs" => "luvs#index"
+  match "/luvs/:id" => "luvs#show"
+
+  root :to => "projects#index"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
