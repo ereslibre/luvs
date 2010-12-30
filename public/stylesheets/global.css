@@ -1,0 +1,32 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-family: "Ubuntu", "DejaVu Sans", arial, sans-serif;
+}
+
+h1 {
+	text-align: center;
+}
+
+div#container {
+	position: relative;
+	margin: 0 auto;
+	height: auto !important;
+	min-height: 100%;
+	width: 750px;
+}
+
+div#header {
+	padding: 1em;
+}
+
+div#content {
+	padding: 1em 1em 5em;
+}
+
+div#footer {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+}
