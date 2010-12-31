@@ -18,17 +18,30 @@
   </div>
 
   <div id="buttonset">
-	<%= link_to "/signup", :class => "awesome magenta" do %>
-  	  <div id="icon"><img src="/images/signup.png"></div>
-	  <div id="text">Sign up !</div>
-	<% end %>
-	<%= link_to "/login", :class => "awesome magenta" do %>
-	  <div id="icon"><img src="/images/login.png"></div>
-	  <div id="text">Log-in</div>
+	<% if user_signed_in? %>
+  	  <%= link_to destroy_user_session_path, :class => "awesome magenta" do %>
+  	    <div id="icon"><img src="/images/logout.png"></div>
+	    <div id="text">Logout</div>
+	  <% end %>	  
+    <% else %>
+  	  <%= link_to new_user_registration_path, :class => "awesome magenta" do %>
+  	    <div id="icon"><img src="/images/signup.png"></div>
+	    <div id="text">Sign up !</div>
+	  <% end %>
+	  <%= link_to new_user_session_path, :class => "awesome magenta" do %>
+	    <div id="icon"><img src="/images/login.png"></div>
+	    <div id="text">Login</div>
+	  <% end %>
 	<% end %>
   </div>
 
   <div id="content">
+	<% if notice %>
+      <p class="notice"><%= notice %></p>
+	<% end %>
+	<% if alert %>
+      <p class="alert"><%= alert %></p>
+	<% end %>
 	<%= yield %>
   </div>
 

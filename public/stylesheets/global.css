@@ -15,6 +15,10 @@ h1 {
 	text-align: center;
 }
 
+p.notice {
+	color: red;
+}
+
 a:link, a:visited, a:hover, a:active {
 	color: #fff;
 }
