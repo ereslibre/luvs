@@ -161,6 +161,10 @@ a:link, a:visited, a:hover, a:active {
 	margin-bottom: 25px;
 }
 
+#project:hover {
+	background-color: #630030;
+}
+
 #projectluvs {
 	position: absolute;
 	right: 45px;
