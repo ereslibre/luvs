@@ -16,7 +16,35 @@ h1 {
 }
 
 p.notice {
-	color: red;
+	display: block;
+	background: #058a03 url(/images/alert-overlay.png) repeat-x;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	vertical-align: middle;
+	font-size: 20px;
+	padding: 1em;
+	margin-top: 11px;
+	margin-bottom: 0;
+}
+
+p.alert {
+	display: block;
+	background: #aa0024 url(/images/alert-overlay.png) repeat-x;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	vertical-align: middle;
+	font-size: 20px;
+	padding: 1em;
+	margin-top: 11px;
+	margin-bottom: 0;
 }
 
 a:link, a:visited, a:hover, a:active {
