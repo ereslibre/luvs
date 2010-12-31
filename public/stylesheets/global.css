@@ -21,13 +21,14 @@ p.notice {
 
 a:link, a:visited, a:hover, a:active {
 	color: #fff;
+	text-decoration: none;
 }
 
 #subtitle {
 	font-size: 50%;
 	font-style: italic;
 	text-align: left;
-    margin-top: -0.5em;
+	margin-top: -0.5em;
 	margin-left: 2em;
 }
 
