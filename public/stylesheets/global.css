@@ -88,3 +88,7 @@ a:link, a:visited, a:hover, a:active {
 	padding: 15px;
 	width: 710px;
 }
+
+img {
+	border: 0;
+}
