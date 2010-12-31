@@ -11,11 +11,12 @@ body {
 	color: #fff;
 }
 
-h1 {
+h2 {
 	text-align: center;
+	font-variant: small-caps;
 }
 
-p.notice {
+.notice {
 	display: block;
 	background: #058a03 url(/images/alert-overlay.png) repeat-x;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.5);
@@ -29,9 +30,18 @@ p.notice {
 	padding: 1em;
 	margin-top: 11px;
 	margin-bottom: 0;
+	height: 100%;
 }
 
-p.alert {
+.notice ul {
+	list-style-image: url(/images/notice.png);
+	padding: 0;
+	margin: 0;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.alert {
 	display: block;
 	background: #aa0024 url(/images/alert-overlay.png) repeat-x;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.5);
@@ -45,6 +55,14 @@ p.alert {
 	padding: 1em;
 	margin-top: 11px;
 	margin-bottom: 0;
+}
+
+.alert ul {
+	list-style-image: url(/images/alert.png);
+	padding: 0;
+	margin: 0;
+	padding-left: 30px;
+	padding-right: 30px;
 }
 
 a:link, a:visited, a:hover, a:active {
