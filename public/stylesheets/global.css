@@ -32,12 +32,11 @@ a:link, a:visited, a:hover, a:active {
 	margin: 0 auto;
 	height: auto !important;
 	min-height: 100%;
-	width: 750px;
+	height: 100%;
+	width: 740px;
 }
 
 #header {
-	display: block;
-	padding: 1em;
 	font-size: 200%;
 	font-weight: bold;
 	text-shadow: 1px 1px 0 #000;
@@ -51,12 +50,16 @@ a:link, a:visited, a:hover, a:active {
 	border-bottom-right-radius: 5px;
 	border-bottom-left-radius: 5px;
 	background: #222;
+	padding: 50px;
+	height: 50px;
+}
+
+#buttonset {
+	margin-top: 11px;
+	text-align: right;
 }
 
 #content {
-	display: block;
-	padding: 1em;
-	margin-bottom: 10cm;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.5);
 	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
 	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
@@ -64,28 +67,24 @@ a:link, a:visited, a:hover, a:active {
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	background: #222244;
-	margin-top: 1em;
-	margin-bottom: 1em;
-	min-height: 300px;
+	padding: 20px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	min-height: 500px;
 }
 
 #footer {
-	display: block;
-	position: absolute;
-	bottom: 0;
-	padding: 1em;
 	text-shadow: 1px 1px 0 #000;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.5);
 	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
 	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
-	-webkit-border-top-left-radius: 5px;
-	-webkit-border-top-right-radius: 5px;
-	-moz-border-radius-topleft: 5px;
-	-moz-border-radius-topright: 5px;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
 	background: #222;
 	text-align: center;
 	font-size: small;
-	width: 725px;
+	height: 15px;
+	padding: 15px;
+	width: 710px;
 }

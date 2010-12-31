@@ -17,12 +17,23 @@
 	</div>
   </div>
 
+  <div id="buttonset">
+	<%= link_to "/signup", :class => "awesome magenta" do %>
+  	  <div id="icon"><img src="/images/signup.png"></div>
+	  <div id="text">Sign up !</div>
+	<% end %>
+	<%= link_to "/login", :class => "awesome magenta" do %>
+	  <div id="icon"><img src="/images/login.png"></div>
+	  <div id="text">Log-in</div>
+	<% end %>
+  </div>
+
   <div id="content">
 	<%= yield %>
   </div>
 
   <div id="footer">
-	Copyright (C) 2010 Rafael Fernández López
+	Copyright (C) 2011 Rafael Fernández López
   </div>
 
 </div>
