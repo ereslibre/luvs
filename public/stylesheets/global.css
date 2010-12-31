@@ -70,7 +70,7 @@ a:link, a:visited, a:hover, a:active {
 }
 
 #header {
-	font-size: 200%;
+	font-size: 300%;
 	font-weight: bold;
 	text-shadow: 1px 1px 0 #000;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.5);
@@ -83,8 +83,7 @@ a:link, a:visited, a:hover, a:active {
 	border-bottom-right-radius: 5px;
 	border-bottom-left-radius: 5px;
 	background: #222;
-	padding: 50px;
-	height: 50px;
+	padding: 30px;
 }
 
 #buttonset {
