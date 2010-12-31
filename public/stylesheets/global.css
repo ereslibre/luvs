@@ -102,6 +102,8 @@ a:link, a:visited, a:hover, a:active {
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	padding: 5px;
+	padding-left: 30px;
+	padding-right: 30px;
 	margin-top: 10px;
 	margin-bottom: 11px;
 	min-height: 500px;
