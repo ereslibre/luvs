@@ -1,6 +1,8 @@
 <h2>All projects</h2>
 <% @projects.each do |project| %>
-<ul>
-  <li><%= link_to project.name, project %></li>
-</ul>
+  <div id="project">
+    <div id="projectname"><%= link_to project.name, project %></div>
+    <div id="projectwebsite"><%= link_to project.website, project.website, :target => "_blank"%></div>
+    <div id="projectluvs"><%= project.luvs.count %></div>
+  </div>
 <% end %>
