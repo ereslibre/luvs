@@ -84,6 +84,7 @@ a:link, a:visited, a:hover, a:active {
 	border-bottom-left-radius: 5px;
 	background: #222;
 	padding: 30px;
+	padding-top: 15px;
 }
 
 #buttonset {
@@ -92,14 +93,15 @@ a:link, a:visited, a:hover, a:active {
 }
 
 #content {
+	display: block;
+	background: #222244 url(/images/alert-overlay.png) repeat-x;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.5);
 	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
 	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
-	background: #222244;
-	padding: 20px;
+	padding: 5px;
 	margin-top: 10px;
 	margin-bottom: 11px;
 	min-height: 500px;
