@@ -184,6 +184,8 @@ a:link, a:visited, a:hover, a:active {
 	vertical-align: middle;
 	font-size: 350%;
 	margin-top: 15px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 #projectname {

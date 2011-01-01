@@ -29,6 +29,14 @@
 	background-color: #630030;
 }
 
+.awesome.magenta.big {
+	position: absolute;
+	left: 20px;
+	top: 295px;
+	height: 115px;
+	width: 530px;
+}
+
 .awesome.disabled, .awesome.disabled:visited {
 	cursor: default;
 	opacity: 0.5;
@@ -36,6 +44,14 @@
 
 .awesome.disabled:hover {
 	opacity: 0.5;
+}
+
+.awesome.disabled.big {
+	position: absolute;
+	left: 20px;
+	top: 295px;
+	height: 115px;
+	width: 530px;
 }
 
 #icon {

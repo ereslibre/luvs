@@ -4,12 +4,12 @@
   <div id="luvstext">people luv'd it !</div>
 </div>
 <% if user_signed_in? %>
-  <div class="awesome magenta" style="position: absolute; left: 20px; top: 295px; height: 115px; width: 530px;">
+  <%= link_to url_for(:controller => "projects", :action => "luv"), :class => "awesome magenta big" do %>
     <div id="centericon"><img src="/images/heart.png" width="64"></div>
     <div id="breaktext" style="font-size: 200%; font-weight: bold;">Luv it !</div>
-  </div>
+  <% end %>
 <% else %>
-  <div class="awesome disabled" style="position: absolute; left: 20px; top: 295px; height: 115px; width: 530px;">
+  <div class="awesome disabled big">
     <div id="centericon"><img src="/images/heart.png" width="64"></div>
     <div id="breaktext" style="font-size: 200%; font-weight: bold;">Login to luv !</div>
   </div>

@@ -9,6 +9,7 @@ Luvs::Application.routes.draw do
   match "/users/:id" => "users#show"
 
   match "/projects" => "projects#index"
+  match "/projects/:id/luv" => "projects#luv"
   match "/projects/:id" => "projects#show"
 
   match "/luvs" => "luvs#index"
