@@ -29,6 +29,15 @@
 	background-color: #630030;
 }
 
+.awesome.disabled, .awesome.disabled:visited {
+	cursor: default;
+	opacity: 0.5;
+}
+
+.awesome.disabled:hover {
+	opacity: 0.5;
+}
+
 #icon {
 	display: inline-block;
 	vertical-align: middle;
