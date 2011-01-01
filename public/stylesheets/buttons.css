@@ -31,15 +31,24 @@
 
 #icon {
 	display: inline-block;
-	width: 32px;
-	max-width: 32px;
-	height: 32px;
-	max-height: 32px;
 	vertical-align: middle;
 	margin-right: 2px;
+}
+
+#centericon {
+	display: block;
+	vertical-align: middle;
+	margin-right: 2px;
+	text-align: center;
 }
 
 #text {
 	display: inline-block;
 	vertical-align: middle;
+}
+
+#breaktext {
+	display: block;
+	vertical-align: middle;
+	text-align: center;
 }
