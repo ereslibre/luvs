@@ -218,21 +218,19 @@ a:link, a:visited, a:hover, a:active {
   padding: 5px;
   margin-top: -125px;
   margin-left: 550px;
-/*   margin-left: 550px; */
+  height: 115px;
 }
 
 #luvscount {
-  display: block;
   font-size: 350%;
-  text-align: top;
-  margin-top: -10px;
+  vertical-align: top;
+  margin-top: -5px;
 }
 
 #luvstext {
-  display: block;
   font-size: 150%;
-  text-align: bottom;
-  margin-top: -10px;
+  vertical-align: bottom;
+  margin-top: -5px;
 }
 
 img {
