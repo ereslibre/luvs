@@ -19,10 +19,14 @@
 
   <div id="buttonset">
 	<% if user_signed_in? %>
+      <%= link_to new_project_path, :class => "awesome magenta" do %>
+        <div id="icon"><img src="/images/new.png"></div>
+        <div id="text">Register Project</div>
+      <% end %>
   	  <%= link_to destroy_user_session_path, :class => "awesome magenta" do %>
   	    <div id="icon"><img src="/images/logout.png"></div>
 	    <div id="text">Logout</div>
-	  <% end %>	  
+	  <% end %>
     <% else %>
   	  <%= link_to new_user_registration_path, :class => "awesome magenta" do %>
   	    <div id="icon"><img src="/images/signup.png"></div>
