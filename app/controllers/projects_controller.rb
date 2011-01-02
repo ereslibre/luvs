@@ -32,4 +32,8 @@ class ProjectsController < ApplicationController
     end
     redirect_to :action => 'show'
   end
+
+  def luvin?
+    true
+  end
 end
