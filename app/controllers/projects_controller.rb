@@ -21,8 +21,12 @@ class ProjectsController < ApplicationController
     @project = Project.find(params[:id])
 
     if user_signed_in?
-      Luv.create(:project_id => @project.id, :user_id => current_user.id)
-      flash[:notice] = "You are now luvin' project #{@project.name}"
+      if Luv.where(:project_id => @project.id, :user_id => current_user.id).exists?
+        flash[:alert] = "You are already luvin' project #{@project.name}"
+      else
+        Luv.create(:project_id => @project.id, :user_id => current_user.id)
+        flash[:notice] = "You are now luvin' project #{@project.name}"
+      end
     else
       flash[:alert] = "You need to login in order to luv #{@project.name}"
     end
