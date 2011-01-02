@@ -1,19 +1,19 @@
 <h2><%= @project.name %></h2>
-<% if @controller.luvin? %>
-  <div class="awesome disabled big">
-    <div id="centericon"><img src="/images/heart.png" width="64"></div>
-    <div id="breaktext" style="font-size: 200%; font-weight: bold;">Already luvin' it !</div>
-  </div>
-<% elsif user_signed_in? %>
-  <%= link_to url_for(:controller => "projects", :action => "luv"), :class => "awesome magenta big" do %>
-    <div id="centericon"><img src="/images/heart.png" width="64"></div>
-    <div id="breaktext" style="font-size: 200%; font-weight: bold;">Luv it !</div>
-  <% end %>
-<% else %>
+<% if not user_signed_in? %>
   <div class="awesome disabled big">
     <div id="centericon"><img src="/images/heart.png" width="64"></div>
     <div id="breaktext" style="font-size: 200%; font-weight: bold;">Login to luv !</div>
   </div>
+<% elsif luvin? @project %>
+  <%= link_to url_for(:controller => "projects", :action => "unluv"), :class => "awesome magenta big" do %>
+    <div id="centericon"><img src="/images/broken_heart.png" width="64"></div>
+    <div id="breaktext" style="font-size: 200%; font-weight: bold;">This is not luv anymore !</div>
+  <% end %>
+<% else %>
+  <%= link_to url_for(:controller => "projects", :action => "luv"), :class => "awesome magenta big" do %>
+    <div id="centericon"><img src="/images/heart.png" width="64"></div>
+    <div id="breaktext" style="font-size: 200%; font-weight: bold;">Luv it !</div>
+  <% end %>
 <% end %>
 <div id="luvs">
   <div id="luvscount"><%= @project.luvs.count %></div>

@@ -1,4 +1,5 @@
 class ProjectsController < ApplicationController
+
   def index
     @projects = Project.all
 
@@ -33,7 +34,25 @@ class ProjectsController < ApplicationController
     redirect_to :action => 'show'
   end
 
-  def luvin?
-    true
+  def unluv
+    @project = Project.find(params[:id])
+
+    if user_signed_in?
+      if not Luv.where(:project_id => @project.id, :user_id => current_user.id).exists?
+        flash[:alert] = "You are not yet luvin' project #{@project.name}"
+      else
+        Luv.where(:project_id => @project.id, :user_id => current_user.id).first.delete
+        flash[:notice] = "You are not luvin' project #{@project.name} anymore"
+      end
+    else
+      flash[:alert] = "You need to login in order to unluv #{@project.name}"
+    end
+    redirect_to :action => 'show'
   end
+
+  def luvin?(project)
+    Luv.where(:project_id => project.id, :user_id => current_user.id).exists?
+  end
+  helper_method :luvin?
+
 end
